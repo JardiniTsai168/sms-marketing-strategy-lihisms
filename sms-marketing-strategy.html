@@ -214,7 +214,7 @@
     .hero-shell {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 44px 24px 24px;
+      padding: 12px 24px 6px;
     }
 
     .hero {
@@ -222,9 +222,9 @@
       overflow: hidden;
       display: grid;
       grid-template-columns: minmax(0, 1.25fr) 320px;
-      gap: 56px;
+      gap: 28px;
       align-items: stretch;
-      padding: 56px 0 24px;
+      padding: 8px 0 0;
       border-radius: 36px;
       background: linear-gradient(160deg, #fff 50%, #fff0f5 100%);
       color: var(--ink);
@@ -260,25 +260,13 @@
       z-index: 1;
     }
 
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--soft-pink);
-      color: var(--pink);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-    }
-
     .hero h1 {
-      margin-top: 18px;
-      font-size: clamp(2.4rem, 4.5vw, 3.9rem);
-      line-height: 1.28;
+      margin-top: 0;
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      line-height: 1.18;
       font-weight: 700;
       letter-spacing: -0.02em;
+      white-space: nowrap;
     }
 
     .hero h1 span {
@@ -286,7 +274,7 @@
     }
 
     .hero-intro {
-      margin-top: 20px;
+      margin-top: 12px;
       max-width: 680px;
       font-size: 1.25rem;
       line-height: 1.9;
@@ -298,7 +286,7 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
-      margin-top: 32px;
+      margin-top: 20px;
     }
 
     .stat-card {
@@ -383,7 +371,7 @@
     .page-wrap {
       max-width: 920px;
       margin: 0 auto;
-      padding: 20px 24px 84px;
+      padding: 0 24px 84px;
     }
 
     .article-card {
@@ -435,7 +423,7 @@
     }
 
     .article-card h2 {
-      margin-top: 34px;
+      margin-top: 14px;
       margin-bottom: 14px;
       font-size: 1.5rem;
       line-height: 1.3;
@@ -666,7 +654,8 @@
 
       .hero {
         grid-template-columns: 1fr;
-        padding: 30px;
+        gap: 18px;
+        padding: 12px 0 0;
       }
 
       .hero-phone {
@@ -680,7 +669,7 @@
       }
 
       .article-card {
-        margin-top: -30px;
+        margin-top: -8px;
         padding: 30px 22px;
       }
 
@@ -769,23 +758,22 @@
     <div class="hero-shell">
       <section class="hero">
         <div class="hero-copy">
-          <div class="hero-kicker">LIHI ARTICLE</div>
           <h1>簡訊行銷強在哪，<span>眉角在哪？</span></h1>
           <p class="hero-intro">
             很多人覺得簡訊貴、難追蹤、能做的事有限。但如果你把它放回實際的點擊表現與轉換效率來看，它其實是很容易被低估的一種行銷工具。
           </p>
           <div class="hero-stats">
             <div class="stat-card">
-              <strong>12%</strong>
-              <span>lihiSMS 大宗發送平均連結點擊率</span>
+              <strong>12% CTR 點擊率</strong>
+              <span>lihiSMS 大宗發送平均連結表現</span>
             </div>
             <div class="stat-card">
-              <strong>$7.08</strong>
+              <strong>$7.08 NT</strong>
               <span>以 0.85 元/封、12% CTR 計算的平均點擊成本</span>
             </div>
             <div class="stat-card">
-              <strong>20%</strong>
-              <span>文案優化後常見可挑戰的點擊率級距</span>
+              <strong>20% CTR 點擊率</strong>
+              <span>文案優化後常見可挑戰的成效級距</span>
             </div>
           </div>
         </div>
