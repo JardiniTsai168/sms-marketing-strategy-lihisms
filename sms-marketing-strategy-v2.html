@@ -231,6 +231,58 @@
       box-shadow: var(--shadow);
     }
 
+    .hero-dots,
+    .hero-dots-2,
+    .hero-curve,
+    .hero-wave {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-dots {
+      top: 11%;
+      left: 5%;
+      width: 86px;
+      height: 86px;
+      opacity: 0.65;
+      background-image: radial-gradient(circle, rgba(255, 107, 157, 0.28) 1.5px, transparent 1.5px);
+      background-size: 10px 10px;
+    }
+
+    .hero-dots-2 {
+      right: 8%;
+      bottom: 24%;
+      width: 68px;
+      height: 68px;
+      opacity: 0.5;
+      background-image: radial-gradient(circle, rgba(167, 139, 250, 0.34) 1.5px, transparent 1.5px);
+      background-size: 8px 8px;
+    }
+
+    .hero-curve {
+      top: 22%;
+      left: 34%;
+      width: 210px;
+      height: 106px;
+      border: 1.5px dashed rgba(255, 107, 157, 0.18);
+      border-radius: 50%;
+      transform: rotate(-20deg);
+    }
+
+    .hero-wave {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      line-height: 0;
+    }
+
+    .hero-wave svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .hero::before,
     .hero::after {
       content: "";
@@ -377,6 +429,17 @@
       border-radius: 48px;
       background: linear-gradient(160deg, #8ce2d9 0%, #41858a 100%);
       box-shadow: 0 24px 40px rgba(15, 19, 81, 0.28);
+      isolation: isolate;
+    }
+
+    .hero-phone::after {
+      content: "";
+      position: absolute;
+      inset: -18px -14px -24px -22px;
+      border-radius: 56px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 182, 193, 0.2), rgba(216, 180, 254, 0.22));
+      filter: blur(20px);
+      z-index: -1;
     }
 
     .hero-phone::before {
@@ -714,6 +777,11 @@
         padding: 30px;
       }
 
+      .hero-dots-2,
+      .hero-curve {
+        display: none;
+      }
+
       .hero-phone {
         justify-self: center;
         width: min(100%, 300px);
@@ -813,6 +881,9 @@
   <main>
     <div class="hero-shell">
       <section class="hero">
+        <div class="hero-dots" aria-hidden="true"></div>
+        <div class="hero-dots-2" aria-hidden="true"></div>
+        <div class="hero-curve" aria-hidden="true"></div>
         <div class="hero-copy">
           <div class="hero-kicker">lihiSMS ARTICLE</div>
           <h1>簡訊行銷強在哪，<span>眉角在哪？</span></h1>
@@ -841,6 +912,11 @@
             <h2>簡訊也能做出高效益</h2>
             <p>不是只把訊息發出去，而是把點擊、追蹤、品牌信任與後續轉換一起接住。</p>
           </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,74.7C672,75,768,53,864,53.3C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,140L1392,140C1344,140,1248,140,1152,140C1056,140,960,140,864,140C768,140,672,140,576,140C480,140,384,140,288,140C192,140,96,140,48,140L0,140Z" fill="rgba(255,255,255,0.92)"></path>
+          </svg>
         </div>
       </section>
     </div>
