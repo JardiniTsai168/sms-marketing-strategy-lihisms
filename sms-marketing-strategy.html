@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>簡訊行銷強在哪，眉角在哪？ | lihiSMS</title>
+  <title>簡訊行銷強在哪，眉角在哪？ | lihi</title>
   <meta name="description" content="很多人以為簡訊行銷貴又難追蹤，但從實際點擊表現來看，只要文案寫對，簡訊依然是高效率、能帶動轉換的行銷工具。">
-  <meta property="og:title" content="簡訊行銷強在哪，眉角在哪？ | lihiSMS">
+  <meta property="og:title" content="簡訊行銷強在哪，眉角在哪？ | lihi">
   <meta property="og:description" content="從實際點擊率、發送成本到 NCC 白名單，一次看懂簡訊行銷的效益與細節。">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://lihisms.com/assets/images/lihisms-og-image.png">
+  <meta property="og:image" content="https://lihi.io/assets/images/lihi-og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="https://lihisms.com/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://lihi.io/assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #12145f;
-      --navy: #162685;
-      --blue: #254ea8;
+      --ink: #1a1a5e;
+      --navy: #1a1a5e;
+      --blue: #ff6b9d;
       --pink: #ff6b9d;
       --pink-deep: #e8558a;
-      --sky: #dff7f4;
-      --soft-pink: #fff3f8;
-      --soft-cream: #fff7e8;
-      --line: #e7def4;
-      --shadow: 0 24px 60px rgba(18, 20, 95, 0.12);
+      --sky: #eaf8ff;
+      --soft-pink: #fff5f8;
+      --soft-cream: #fff9ef;
+      --line: rgba(26, 26, 94, 0.1);
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
       --max: 1200px;
     }
 
@@ -42,10 +42,10 @@
     body {
       font-family: "Noto Sans TC", "Inter", sans-serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(255, 107, 157, 0.16), transparent 24%),
-        linear-gradient(180deg, #fff 0%, #fff8fb 56%, #fff 100%);
-      line-height: 1.75;
+      background: #fff;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
     a {
@@ -59,12 +59,13 @@
     }
 
     .nav {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      width: 100%;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(18, 20, 95, 0.08);
+      background: #fff;
+      border-bottom: 1px solid rgba(26, 26, 94, 0.08);
     }
 
     .nav-inner {
@@ -79,7 +80,7 @@
 
     .nav-logo img,
     .footer-left img {
-      height: 32px;
+      height: 40px;
       width: auto;
     }
 
@@ -184,9 +185,9 @@
     .btn-primary,
     .article-cta,
     .mobile-cta a {
-      background: var(--pink);
+      background: linear-gradient(90deg, #e89b74, #dd6b6b);
       color: #fff;
-      box-shadow: 0 10px 26px rgba(255, 107, 157, 0.25);
+      box-shadow: 0 8px 24px rgba(221, 107, 107, 0.24);
     }
 
     .btn-primary {
@@ -199,7 +200,7 @@
     .article-cta:hover,
     .mobile-cta a:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 34px rgba(255, 107, 157, 0.3);
+      box-shadow: 0 12px 28px rgba(221, 107, 107, 0.28);
     }
 
     .nav-hamburger,
@@ -213,7 +214,7 @@
     .hero-shell {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 44px 24px 24px;
+      padding: 108px 24px 24px;
     }
 
     .hero {
@@ -221,14 +222,12 @@
       overflow: hidden;
       display: grid;
       grid-template-columns: minmax(0, 1.25fr) 320px;
-      gap: 28px;
+      gap: 56px;
       align-items: stretch;
-      padding: 48px;
+      padding: 56px 0 24px;
       border-radius: 36px;
-      background:
-        linear-gradient(135deg, rgba(37, 78, 168, 0.98) 0%, rgba(22, 38, 133, 0.98) 54%, rgba(228, 85, 138, 0.94) 100%);
-      color: #fff;
-      box-shadow: var(--shadow);
+      background: linear-gradient(160deg, #fff 50%, #fff0f5 100%);
+      color: var(--ink);
     }
 
     .hero::before,
@@ -240,19 +239,19 @@
     }
 
     .hero::before {
-      width: 440px;
-      height: 440px;
-      top: -220px;
-      right: -140px;
-      background: rgba(255, 255, 255, 0.08);
+      width: 600px;
+      height: 600px;
+      top: -50%;
+      right: -20%;
+      background: radial-gradient(circle, rgba(255, 107, 157, 0.08) 0%, transparent 70%);
     }
 
     .hero::after {
-      width: 280px;
-      height: 280px;
-      bottom: -100px;
-      left: -60px;
-      background: rgba(86, 215, 201, 0.22);
+      width: 300px;
+      height: 300px;
+      bottom: 10%;
+      left: 5%;
+      background: radial-gradient(circle, rgba(26, 26, 94, 0.04) 0%, transparent 70%);
     }
 
     .hero-copy,
@@ -267,57 +266,59 @@
       gap: 8px;
       padding: 8px 14px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
+      background: var(--soft-pink);
+      color: var(--pink);
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: 0.08em;
     }
 
     .hero h1 {
-      margin-top: 22px;
-      font-size: clamp(2.25rem, 5vw, 4rem);
-      line-height: 1.1;
-      font-weight: 900;
-      letter-spacing: -0.03em;
+      margin-top: 18px;
+      font-size: clamp(2.4rem, 4.5vw, 3.9rem);
+      line-height: 1.28;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
 
     .hero h1 span {
-      color: #ffd84e;
-      text-decoration: underline;
-      text-decoration-thickness: 6px;
-      text-underline-offset: 8px;
+      color: var(--pink);
     }
 
     .hero-intro {
       margin-top: 20px;
       max-width: 680px;
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.25rem;
+      line-height: 1.9;
+      font-weight: 600;
+      color: var(--ink);
     }
 
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
-      margin-top: 28px;
+      margin-top: 32px;
     }
 
     .stat-card {
-      padding: 18px 18px 16px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border: 1px solid rgba(26, 26, 94, 0.08);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
     }
 
     .stat-card strong {
       display: block;
-      font: 900 clamp(1.65rem, 4vw, 2.6rem) / 1 "Inter", sans-serif;
+      font: 700 clamp(1.65rem, 4vw, 2.4rem) / 1 "Inter", sans-serif;
+      color: var(--ink);
       margin-bottom: 8px;
     }
 
     .stat-card span {
       font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.88);
+      color: #7b7b9e;
     }
 
     .hero-phone {
@@ -329,7 +330,8 @@
       border: 10px solid #2f3038;
       border-radius: 48px;
       background: linear-gradient(160deg, #8ce2d9 0%, #41858a 100%);
-      box-shadow: 0 24px 40px rgba(15, 19, 81, 0.28);
+      box-shadow: 0 12px 40px rgba(26, 26, 94, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+      transform: rotateY(-8deg) rotateX(4deg);
     }
 
     .hero-phone::before {
@@ -379,19 +381,19 @@
     }
 
     .page-wrap {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 18px 24px 84px;
+      padding: 20px 24px 84px;
     }
 
     .article-card {
       position: relative;
-      margin-top: -56px;
+      margin-top: 8px;
       padding: 42px;
-      border: 1px solid rgba(18, 20, 95, 0.08);
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow: var(--shadow);
+      border: 1px solid rgba(26, 26, 94, 0.08);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
     }
 
     .article-card::before {
@@ -399,9 +401,9 @@
       position: absolute;
       inset: 0 auto auto 0;
       width: 100%;
-      height: 8px;
-      border-radius: 30px 30px 0 0;
-      background: linear-gradient(90deg, var(--pink) 0%, #ffc54b 50%, #56d7c9 100%);
+      height: 4px;
+      border-radius: 24px 24px 0 0;
+      background: linear-gradient(90deg, #ff6b9d 0%, #e89b74 100%);
     }
 
     .article-meta {
@@ -409,7 +411,7 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 10px 16px;
-      color: #636b98;
+      color: #7b7b9e;
       font-size: 0.92rem;
       margin-bottom: 18px;
     }
@@ -417,14 +419,14 @@
     .article-meta-badge {
       padding: 6px 12px;
       border-radius: 999px;
-      background: #fff0f5;
+      background: #ffe8f0;
       color: var(--pink-deep);
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .lede {
-      font-size: 1.14rem;
-      color: #26335f;
+      font-size: 1.08rem;
+      color: #1e293b;
       margin-bottom: 24px;
     }
 
@@ -435,7 +437,7 @@
     .article-card h2 {
       margin-top: 34px;
       margin-bottom: 14px;
-      font-size: 1.55rem;
+      font-size: 1.5rem;
       line-height: 1.3;
       color: var(--navy);
     }
@@ -447,13 +449,13 @@
     .highlight-block,
     .note-block {
       margin: 30px 0;
-      border-radius: 24px;
+      border-radius: 16px;
       padding: 28px;
     }
 
     .highlight-block {
-      background: linear-gradient(135deg, #fff2f7 0%, #fffaf0 100%);
-      border: 1px solid #f6dce7;
+      background: linear-gradient(135deg, #fff8fb 0%, #fffaf1 100%);
+      border: 1px solid rgba(255, 107, 157, 0.14);
     }
 
     .highlight-block p {
@@ -469,22 +471,22 @@
 
     .metric {
       padding: 18px;
-      border-radius: 20px;
+      border-radius: 14px;
       background: #fff;
-      border: 1px solid #f0dbe4;
+      border: 1px solid rgba(26, 26, 94, 0.08);
     }
 
     .metric strong {
       display: block;
-      font: 900 2rem/1 "Inter", sans-serif;
-      color: var(--pink-deep);
+      font: 700 2rem/1 "Inter", sans-serif;
+      color: var(--ink);
       margin-bottom: 8px;
     }
 
     .metric span {
       display: block;
       font-size: 0.95rem;
-      color: #58618e;
+      color: #7b7b9e;
       line-height: 1.5;
     }
 
@@ -492,58 +494,56 @@
       margin: 24px 0;
       padding: 18px 22px;
       border-left: 5px solid var(--pink);
-      background: #fff8fb;
+      background: var(--soft-pink);
       color: #24305e;
       font-size: 1.05rem;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .note-block {
-      background: linear-gradient(135deg, #eefcf9 0%, #f7fbff 100%);
-      border: 1px solid #d3ece8;
+      background: linear-gradient(135deg, #f8fcff 0%, #fdf7fa 100%);
+      border: 1px solid rgba(26, 26, 94, 0.08);
     }
 
     .article-cta {
       margin-top: 30px;
       padding: 16px 28px;
       font-size: 1rem;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .site-footer {
       margin-top: 28px;
-      background: #f4f0f1;
+      background: #f9f5f7;
       color: #7b7698;
     }
 
     .site-footer::before {
-      content: "";
-      display: block;
-      height: 16px;
-      background: #23206f;
+      display: none;
     }
 
     .footer-shell {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 44px 24px 28px;
+      padding: 48px 24px 32px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 32px;
+      flex-wrap: wrap;
     }
 
     .footer-meta {
-      margin-top: 16px;
-      font-size: 14px;
-      line-height: 1.7;
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.6;
     }
 
     .footer-right {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 18px;
+      gap: 16px;
     }
 
     .footer-inline-links {
@@ -559,8 +559,8 @@
     }
 
     .footer-social svg {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       fill: currentColor;
     }
 
@@ -664,7 +664,8 @@
 
       .hero {
         grid-template-columns: 1fr;
-        padding: 30px;
+        gap: 28px;
+        padding: 24px 0 8px;
       }
 
       .hero-phone {
@@ -678,7 +679,7 @@
       }
 
       .article-card {
-        margin-top: -30px;
+        margin-top: 0;
         padding: 30px 22px;
       }
 
@@ -706,7 +707,7 @@
       .mobile-cta a {
         width: 100%;
         padding: 14px;
-        font-weight: 800;
+        font-weight: 700;
       }
     }
   </style>
@@ -715,11 +716,10 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a class="nav-logo" href="https://lihi.io/">
-        <img alt="lihiSMS" src="https://lihisms.com/assets/images/lihisms-logo.png">
+        <img alt="lihi" src="https://lihi.io/assets/images/lihi-logo-primary.png">
       </a>
       <ul class="nav-links">
         <li><a href="https://lihidomain.com/">品牌網域</a></li>
-        <li><a href="https://lihi.io/">行銷工具</a></li>
         <li><a href="https://knowledge.lihi.io/pricing/">方案價格</a></li>
         <li class="has-dropdown">
           <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">行銷資源 ▾</button>
@@ -745,7 +745,6 @@
     </div>
     <div class="nav-mobile-menu" id="mobileMenu">
       <a href="https://lihidomain.com/">品牌網域</a>
-      <a href="https://lihi.io/">行銷工具</a>
       <a href="https://knowledge.lihi.io/pricing/">方案價格</a>
       <button type="button" class="mobile-submenu-toggle" id="mobileSubmenuToggle" aria-expanded="false" aria-controls="mobile-resources-submenu">行銷資源 ▾</button>
       <div class="mobile-submenu" id="mobile-resources-submenu">
@@ -767,7 +766,7 @@
     <div class="hero-shell">
       <section class="hero">
         <div class="hero-copy">
-          <div class="hero-kicker">lihiSMS ARTICLE</div>
+          <div class="hero-kicker">LIHI ARTICLE</div>
           <h1>簡訊行銷強在哪，<span>眉角在哪？</span></h1>
           <p class="hero-intro">
             很多人覺得簡訊貴、難追蹤、能做的事有限。但如果你把它放回實際的點擊表現與轉換效率來看，它其實是很容易被低估的一種行銷工具。
@@ -861,16 +860,16 @@
   <footer class="site-footer">
     <div class="footer-shell">
       <div class="footer-left">
-        <img loading="lazy" decoding="async" alt="lihiSMS" src="https://lihisms.com/assets/images/lihisms-logo.png">
+        <img loading="lazy" decoding="async" alt="lihi" src="https://lihi.io/assets/images/lihi-logo-primary.png">
         <div class="footer-meta">
           <div>利害短網址有限公司 | 2017 年成立，服務超過 5,000+ 品牌</div>
-          <div>© 2018-2026 統編 82908327</div>
+          <div>© 2018-<span id="footerYear"></span> 統編 82908327</div>
         </div>
       </div>
       <div class="footer-right">
         <ul class="footer-inline-links">
-          <li><a href="https://lihisms.com/terms-of-use">服務條款</a></li>
-          <li><a href="https://lihisms.com/privacy-policy">隱私權政策</a></li>
+          <li><a href="https://knowledge.lihi.io/terms-of-use/" target="_blank" rel="noopener">服務條款</a></li>
+          <li><a href="https://knowledge.lihi.io/privacy-policy/" target="_blank" rel="noopener">隱私權政策</a></li>
           <li><a href="https://knowledge.lihi.io/service-level-agreement/" target="_blank" rel="noopener">服務等級</a></li>
           <li><a href="https://report.lihi.io" target="_blank" rel="noopener">檢舉網址</a></li>
           <li><a href="mailto:service@lihi.io">service@lihi.io</a></li>
@@ -896,6 +895,9 @@
 
   <script>
     (function () {
+      const footerYear = document.getElementById("footerYear");
+      if (footerYear) footerYear.textContent = new Date().getFullYear();
+
       const hamburger = document.getElementById("hamburger");
       const mobileMenu = document.getElementById("mobileMenu");
       const mobileOverlay = document.getElementById("mobileOverlay");
