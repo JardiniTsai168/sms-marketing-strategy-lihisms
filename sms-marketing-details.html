@@ -516,6 +516,7 @@
       line-height: 1.5;
       color: #636b98;
       font-weight: 700;
+      text-align: center;
     }
 
     .related-links {
@@ -700,7 +701,12 @@
 
       .hero {
         grid-template-columns: 1fr;
+        gap: 22px;
         padding: 30px;
+      }
+
+      .hero h1 {
+        white-space: normal;
       }
 
       .hero-phone {
@@ -743,6 +749,97 @@
         width: 100%;
         padding: 14px;
         font-weight: 800;
+      }
+
+      .mobile-cta .cta-note {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .hero-shell {
+        padding: 22px 14px 18px;
+      }
+
+      .hero {
+        padding: 24px 18px;
+        border-radius: 28px;
+      }
+
+      .hero h1 {
+        margin-top: 14px;
+        margin-bottom: 18px;
+        font-size: clamp(1.9rem, 8vw, 2.7rem);
+        line-height: 1.08;
+      }
+
+      .hero-intro {
+        max-width: none;
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+      .hero-phone {
+        width: min(100%, 220px);
+        min-height: 360px;
+        padding: 30px 12px 14px;
+        border-width: 8px;
+        border-radius: 40px;
+      }
+
+      .hero-phone::before {
+        width: 92px;
+        height: 22px;
+      }
+
+      .phone-time {
+        margin: 24px 0 22px;
+        font-size: 2.8rem;
+      }
+
+      .sms-card {
+        padding: 12px 14px;
+      }
+
+      .sms-card h2 {
+        white-space: normal;
+      }
+
+      .page-wrap {
+        padding: 14px 14px 34px;
+      }
+
+      .article-card {
+        margin-top: -22px;
+        padding: 24px 18px;
+        border-radius: 24px;
+      }
+
+      .related-links {
+        gap: 12px;
+      }
+
+      .mobile-cta {
+        padding: 10px 14px 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-stats {
+        gap: 12px;
+      }
+
+      .stat-card {
+        padding: 16px 14px 14px;
+      }
+
+      .stat-card strong {
+        font-size: 1.3rem;
+      }
+
+      .mobile-cta {
+        padding-left: 12px;
+        padding-right: 12px;
       }
     }
   </style>
